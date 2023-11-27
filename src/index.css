@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background-color: black;
+  color: white;
+}
+
+@layer components {
+  .input {
+    @apply px-5 py-3 w-full rounded-md placeholder:text-gray-400 text-white bg-[#333333];
+  }
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
